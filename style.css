@@ -67,7 +67,7 @@ h2 {
   font-weight: 400;
 }
 
-h3,
+h3, 
 button {
   font-size: 23px;
 }
@@ -264,4 +264,63 @@ li img {
   border-radius: 10px;
   padding: 30px 60px;
   box-shadow: 0 0 7.5px 0px #00a1ff;
+}
+
+/* Quem */
+
+.secao--quem {
+  background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660d9e60b52c66db2e67e0b4_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1.webp);
+  background-size: cover;
+  background-position: 50%;
+  padding-bottom: 0;
+}
+
+.card--quem {
+  max-width: 60%;
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.container--quem {
+  position: relative;
+}
+
+.daniel-quem {
+  position: absolute;
+  max-width: 455px;
+  bottom: 0;
+  right: 0;
+  transform: translate(20%, 0);
+}
+
+.card__titulo {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  border-top: solid 1px #ffffff80;
+}
+
+.footer img {
+  max-width: 45px;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer__container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer__links {
+  display: flex;
+  gap: 10px;
 }
