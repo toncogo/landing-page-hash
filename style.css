@@ -27,6 +27,7 @@ body {
 
 .secao {
   padding: 70px 20px;
+  overflow: hidden;
 }
 
 .container {
@@ -68,6 +69,9 @@ h2 {
 }
 
 h3, 
+.h3,
+.subtitulo,
+.data, 
 button {
   font-size: 23px;
 }
@@ -130,10 +134,15 @@ button {
 .passos,
 .temas {
   align-self: stretch;
-  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.passos, 
+.temas, 
+.card {
+  font-size: 18px;
 }
 
 /* Hero */
@@ -172,11 +181,6 @@ h1 .fullstack {
   max-width: 50%;
   gap: 25px;
   font-size: 18px;
-}
-
-.subtitulo,
-.data {
-  font-size: 23px;
 }
 
 ul {
@@ -264,6 +268,10 @@ li img {
   border-radius: 10px;
   padding: 30px 60px;
   box-shadow: 0 0 7.5px 0px #00a1ff;
+}
+
+.temas {
+  margin-left: 30px;
 }
 
 /* Quem */
@@ -357,6 +365,7 @@ li img {
   background-color: #1e1e1e;
   padding: 25px;
   border-radius: 25px;
+  max-width: 100%;
 }
 
 input {
@@ -377,4 +386,238 @@ input {
   aspect-ratio: 1 / 1;
   width: auto;
   height: 54px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1007px) {
+  h1 {
+    font-size: 44px;
+  }
+  
+  h1 .programacao {
+    font-size: 48px;
+  }
+  
+  h1 .fullstack {
+    font-size: 70px;
+  }
+
+  .disclaimer {
+    text-align: center;
+  }
+
+  .secao--disclaimer {
+    padding: 30px;
+  }
+
+  .secao--hero, 
+  .secao--quem {
+    background-image: url(https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/660db2a7aa53ee839f890d43_%5BBACKGROUND%5D%20-%20BANNER%2001%20-%20WJS1%20-%20Mobile.webp);
+    padding-bottom: 0;
+  }
+
+  .card {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .container--coluna {
+    gap: 40px;
+  }
+
+  .daniel-quem {
+    position: static;
+    transform: none;
+  }
+
+  .card--quem {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 829px) {
+  .passos, .temas {
+    max-width: 550px;
+    align-self: center;
+    text-align: center;
+  }
+
+  .passo {
+    flex-direction: column;
+  }
+
+  .passo__barra {
+    height: 2px;
+    width: 100%;
+  }
+
+  .temas {
+    margin-left: 0;
+    gap: 50px;
+  }
+
+  .tema {
+    padding-top: 50px;
+  }
+
+  .hexagono--lateral {
+    left: 50%;
+    top: 0;
+  }
+
+  .daniel, .daniel-quem {
+    max-width: 350px;
+  }
+
+  h2.card__titulo {
+    text-align: start;
+  }
+
+  .popup__container {
+    padding: 20px;
+    margin: 0 40px;
+  }  
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+  
+  h1 .programacao {
+    font-size: 35px;
+  }
+  
+  h1 .fullstack {
+    font-size: 51px;
+  }
+
+  .card {
+    padding: 25px;
+    padding-top: 55px;
+    gap: 15px;
+  }
+
+  .subtitulo, 
+  .data {
+    font-size: 17px;
+  }
+
+  .passos, 
+  .temas, 
+  .card {
+    font-size: 16px;
+  }
+
+  h3, 
+  .h3,
+  .subtitulo,
+  .data, 
+  button {
+    font-size: 17px;
+  }
+
+  .daniel, .daniel-quem {
+    max-width: 275px;
+  }
+
+  .disclaimer {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .secao {
+    padding: 40px 20px;
+  }
+
+  .secao--hero {
+    padding-bottom: inherit;
+    padding-top: 70px;
+  }
+
+  .secao--quem {
+    padding-bottom: inherit;
+  }
+
+  .secao--disclaimer {
+    padding: 30px;
+  }
+
+  .container--coluna {
+    gap: 30px;
+  }
+
+  .passo {
+    gap: 25px;
+  }
+
+  .temas {
+    margin-top: 30px;
+  }
+
+  .tema {
+    padding: 40px 20px 20px;
+  }
+
+  .card--quem {
+    padding-top: 25px;
+  }
+
+  .card__titulo {
+    text-align: start;
+    font-size: 25px;
+  }
+
+  .footer {
+    padding: 25px;
+  }
+
+  .footer__container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .footer__links > p {
+    display: none;
+  }
+
+  .popup__container {
+    padding: 20px;
+    margin: 0 30px;
+  }
+
+  .popup__botao {
+    padding: 10px 20px;
+  }
+
+  .popup__botao--fechar {
+    padding: 10px;
+    height: 50px;
+  }
+
+  .dataInput {
+    font-size: 15px;
+  }
 }
