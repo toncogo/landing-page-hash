@@ -1,4 +1,4 @@
-Desenvolvendo uma Landing page da hashtag treinamentos utilizando HTML, CSS e linguagem de programação JavaScript para algumas interações.
+Desenvolvendo uma Landing page da hashtag treinamentos utilizando HTML, CSS e linguagem de programação JavaScript para algumas interações..
 
 **`Versão atual: 1.5.3`** -finished
 
