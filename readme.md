@@ -5,4 +5,3 @@ Desenvolvendo uma Landing page da hashtag treinamentos utilizando HTML, CSS e li
 => Fique à vontade para contribuir neste e em outros projetos!
 => Todos os direitos reservados pela Hashtag Treinamentos.
 => Site ficial: https://lp.hashtagtreinamentos.com/full-stack/aula/inscricao
-=> Contato: instagram.com/alyton.cogo/ 
